@@ -15,7 +15,7 @@ int main()
 }
     sf::RenderWindow window1(sf::VideoMode(800, 600), L"Окно 1");
     sf::RenderWindow window2(sf::VideoMode(800, 600), L"Окно 2");
-    ImGui::SFML::Init(window1);
+    //ImGui::SFML::Init(window1);
     // Загрузка шрифта для imgui
    // Load font
     ImGuiIO& io = ImGui::GetIO();
@@ -46,7 +46,7 @@ int main()
             if (event.type == sf::Event::Closed)
                 window2.close();
         }
-        ImGui::SFML::Update(window1, sf::seconds(1.f / 60.f));
+        //ImGui::SFML::Update(window1, sf::seconds(1.f / 60.f));
         // Обновление и отрисовка содержимого окон
         window1.clear(sf::Color::White);
         // Рисуем содержимое окна 1
